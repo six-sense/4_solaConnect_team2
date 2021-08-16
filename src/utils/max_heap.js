@@ -47,6 +47,7 @@ export class MaxHeap {
         while(this.heap[leftIndx] > this.heap[curIndx] || this.heap[rightIndx] > this.heap[curIndx]){
             const maxIndx = this.heap[leftIndx] > this.heap[rightIndx] ? leftIndx : rightIndx;
             this.swap(maxIndx, curIndx);
+            curIndx = maxIndx;
             leftIndx = curIndx * 2;
             rightIndx = curIndx *2 + 1;
         }

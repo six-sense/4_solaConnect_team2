@@ -47,6 +47,7 @@ export class MinHeap {
         while(this.heap[leftIdx] < this.heap[curIdx] || this.heap[rightIdx] < this.heap[curIdx]) {
             const minIdx = this.heap[leftIdx] > this.heap[rightIdx] ? rightIdx : leftIdx;
             this.swap(minIdx, curIdx);
+            curIdx = minIdx;
             leftIdx = curIdx * 2;
             rightIdx = curIdx * 2 + 1;
         }
