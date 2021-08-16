@@ -9,6 +9,7 @@ const flexSet = (
   justify-content: ${justify};
   align-items: ${items};
   flex-direction: ${direction};
+  margin:15px;
 `;
 
 const mixin = { flexSet };
