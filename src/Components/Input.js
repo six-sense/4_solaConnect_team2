@@ -1,15 +1,24 @@
 import React from 'react';
 import styled,{css} from 'styled-components';
+import propTypes from 'prop-types';
 
-export default function Input(){
+export default function Input(props){
+    const onChangeValue = (e) => {
+        props.setValue(e.target.value);
+    }
     return(
         <Container>
-            <MyInput placeholder="숫자와 콤마(,)만 입력하세요."/>
+            <MyInput value={props.value} onChange={onChangeValue} placeholder="숫자와 콤마(,)만 입력하세요."/>
         </Container>
         
-   
     )
 }
+
+Input.propTypes = {
+    value:propTypes.string,
+    setValue:propTypes.func
+}
+
 const Container = styled.div`
     ${({theme}) => theme.flexSet()};
     position:relative;
