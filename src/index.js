@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import mixin from 'Styles/mixin';
 import App from './App';
+import mixin from './Styles/mixin';
+import { GlobalStyles } from './Styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={mixin}>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root'),
+  <>
+    <GlobalStyles />
+      <ThemeProvider theme={{ ...mixin }}>
+        <App />
+      </ThemeProvider>
+  </>,
+  document.getElementById('root')
 );
