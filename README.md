@@ -3,7 +3,7 @@
     <img src='https://www.solarconnect.kr/assets/img/common/sc-logo.svg' width="300px;" alt="LiveMD" />
   </a>
 </p>
-<h2 align='middle'><a href=''>solarconnect.netlify.app</a></h2>
+<h2 align='middle'><a href='https://solarconnect.netlify.app/'>solarconnect.netlify.app</a></h2>
 
 
 
