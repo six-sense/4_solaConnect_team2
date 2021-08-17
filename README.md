@@ -1,5 +1,5 @@
 <p align='middle'>
-  <a href='solarconnect.netlify.app'>
+  <a href='https://solarconnect.netlify.app/'>
     <img src='https://www.solarconnect.kr/assets/img/common/sc-logo.svg' width="300px;" alt="LiveMD" />
   </a>
 </p>
