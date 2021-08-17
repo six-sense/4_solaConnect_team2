@@ -20,7 +20,7 @@ const Container = styled.div`
 `
 
 const MsgLayout  = styled.div`
-    width:50%;
+    width:100%;
     height:auto;
     font-size: 15px;
     color:red;
