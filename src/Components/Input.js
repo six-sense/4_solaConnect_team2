@@ -1,6 +1,11 @@
 import React from 'react';
 import styled,{css} from 'styled-components';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
+Input.propTypes = {
+    value:PropTypes.string,
+    setValue:PropTypes.func
+}
 
 export default function Input(props){
     const onChangeValue = (e) => {
@@ -12,11 +17,6 @@ export default function Input(props){
         </Container>
         
     )
-}
-
-Input.propTypes = {
-    value:propTypes.string,
-    setValue:propTypes.func
 }
 
 const Container = styled.div`
@@ -34,7 +34,7 @@ const InputLayout = css`
 `;
 
 const MyInput = styled.textarea`
-    width:50%;
+    width:100%;
     height:100px;
     resize:none;
     &:focus {

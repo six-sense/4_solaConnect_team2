@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
+ErrorMsg.propTypes = {
+    errMsg: PropTypes.string
+}
 
 export default function ErrorMsg(props){
     return(
@@ -10,9 +14,6 @@ export default function ErrorMsg(props){
     )
 }
 
-ErrorMsg.propTypes = {
-    errMsg: propTypes.string
-}
 const Container = styled.div`
     ${({theme}) => theme.flexSet()};
     position:relative;

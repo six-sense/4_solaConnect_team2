@@ -19,7 +19,6 @@ export class MinHeap {
         this.heap.push(value);
         let curIdx = this.heap.length - 1;
         let parIdx = Math.trunc(curIdx / 2);
-        console.log(this.heap[parIdx], this.heap[curIdx])
         while(curIdx > 1 && this.heap[parIdx] > this.heap[curIdx]) {
             this.swap(parIdx, curIdx)
             curIdx = parIdx;

@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
+
+Output.propTypes = {
+    sort: PropTypes.string,
+    sorted:PropTypes.array
+}
 
 export default function Output(props){
     const [data, setData] = useState([]);
@@ -16,18 +21,13 @@ export default function Output(props){
     )
 }
 
-Output.propTypes = {
-    sort: propTypes.string,
-    sorted:propTypes.array
-}
-
 const Container = styled.div`
     ${({theme}) => theme.flexSet()};
     position:relative;
 `
 
 const MyOutput = styled.textarea`
-    width:50%;
+    width:100%;
     height:130px;
     background-color: #F0E5DE;
     border:1px solid #9B8281;

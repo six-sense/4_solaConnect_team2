@@ -1,4 +1,4 @@
-export function filter_input(e){
+export function filterInput(e){
     let [result, errMsg] = ['',false]
     let banChar = /[^\\,\d]/gi;
     let multiComa = /[\\,]{2,}/gi;

@@ -1,17 +1,21 @@
 import React from 'react';
 import styled,{css} from 'styled-components';
-import propTypes from 'prop-types';
-import { filter_input } from "utils/filter_input";
-import { MinHeap } from 'utils/min_heap';
-import { MaxHeap } from 'utils/max_heap';
+import PropTypes from 'prop-types';
+import { filterInput } from "utils/filterInput";
+import { MinHeap } from 'utils/minHeap';
+import { MaxHeap } from 'utils/maxHeap';
+
+Button.propTypes = {
+    value:PropTypes.string,
+    setErrMsg:PropTypes.func,
+    setSortAsc:PropTypes.func,
+    setSortDesc:PropTypes.func,
+}
 
 export default function Button(props){
     const onClickBtn = () => {
-        let [result, errMsg] = filter_input(props.value);
-        
-        
+        let [result, errMsg] = filterInput(props.value);
         errMsg ? props.setErrMsg('허용되지 않는 문자는 자동 제거된 후 정렬됩니다.'): props.setErrMsg('')
-        
         sortAsc(result)
     }
 
@@ -52,14 +56,6 @@ export default function Button(props){
     )
 }
 
-Button.propTypes = {
-    value:propTypes.string,
-    setErrMsg:propTypes.func,
-    setSortAsc:propTypes.func,
-    setSortDesc:propTypes.func,
-}
-
-
 const Container = styled.div`
     ${({theme}) => theme.flexSet()};
 `;
@@ -74,7 +70,7 @@ const ButtonLayout = css`
 
 const MyButton = styled.button`
     display:block;
-    width:15%;
+    width:30%;
     height:50px;
     cursor: pointer;
     box-sizing:border-box;
