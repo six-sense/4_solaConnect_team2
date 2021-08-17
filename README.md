@@ -1,9 +1,9 @@
 <p align='middle'>
-  <a href='https://jaranda.netlify.app/'>
+  <a href='solarconnect.netlify.app'>
     <img src='https://www.solarconnect.kr/assets/img/common/sc-logo.svg' width="300px;" alt="LiveMD" />
   </a>
 </p>
-<h2 align='middle'><a href=''>배포할 주소</a></h2>
+<h2 align='middle'><a href=''>solarconnect.netlify.app</a></h2>
 
 
 
