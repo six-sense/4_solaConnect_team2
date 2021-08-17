@@ -6,9 +6,9 @@ export default function Output(props){
     const [data, setData] = useState([]);
     
     useEffect(()=>{
-        console.log(props.sorted)
         setData(props.sorted)
     },[props.sorted])
+    
     return(
         <Container>
             <MyOutput placeholder={props.sort} value={data} readOnly/>

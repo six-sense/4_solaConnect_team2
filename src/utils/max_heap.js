@@ -20,10 +20,10 @@ export class MaxHeap {
         let curIndx = this.heap.length-1;
         let parIndx = Math.trunc(curIndx / 2);
 
-        while(curIndx >1 && this.heap[parIndx] < this.heap[curIndx]){
+        while(curIndx > 1 && this.heap[parIndx] < this.heap[curIndx]){
             this.swap(parIndx, curIndx);
             curIndx = parIndx;
-            parIndx = Math.trunc(curIndx  /2);
+            parIndx = Math.trunc(curIndx /2);
         }
     }
 
@@ -43,13 +43,13 @@ export class MaxHeap {
             }
             return max;
         }
-
-        while(this.heap[leftIndx] > this.heap[curIndx] || this.heap[rightIndx] > this.heap[curIndx]){
+        
+        while(this.heap[rightIndx] !== undefined && this.heap[leftIndx] > this.heap[curIndx] || this.heap[rightIndx] > this.heap[curIndx]){
             const maxIndx = this.heap[leftIndx] > this.heap[rightIndx] ? leftIndx : rightIndx;
             this.swap(maxIndx, curIndx);
             curIndx = maxIndx;
             leftIndx = curIndx * 2;
-            rightIndx = curIndx *2 + 1;
+            rightIndx = curIndx * 2 + 1;
         }
         return max;
     }

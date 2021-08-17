@@ -11,7 +11,6 @@ export default function Button(props){
         
         
         errMsg ? props.setErrMsg('허용되지 않는 문자는 자동 제거된 후 정렬됩니다.'): props.setErrMsg('')
-        console.log(result, errMsg)
         
         sortAsc(result)
     }
@@ -33,7 +32,6 @@ export default function Button(props){
     }
 
     const sortDesc = (result) => {
-        // console.log(result)
         let maxHeap = new MaxHeap();
         let sortDescItem = [];
 
