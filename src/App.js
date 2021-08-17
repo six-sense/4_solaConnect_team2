@@ -6,8 +6,8 @@ export default function App() {
   return (
     <Container>
       <Wrap>
-        <CurrentDate contury="ko" />
-        <CurrentDate contury="us" />
+        <CurrentDate country="ko" />
+        <CurrentDate country="us" />
       </Wrap>
     </Container>
   );

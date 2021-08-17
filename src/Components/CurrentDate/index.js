@@ -5,7 +5,7 @@ export default function CurrentDate() {
   return (
     <Container>
       <p>🗓</p>
-      <DateForm>가나다라</DateForm>
+      <DateForm>가나다</DateForm>
     </Container>
   );
 }
