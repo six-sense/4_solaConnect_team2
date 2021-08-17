@@ -15,7 +15,7 @@ export default function CurrentDate({ country }) {
   const changeDay = (day) => (country === 'ko' ? koDay[day] : usDay[day]);
   const changeUsMonth = (month) => usMonth[month];
 
-  const divideCountry = () => {
+  const sectionCountry = () => {
     country === 'ko'
       ? setCurrentDate(`${year}년 ${month}월 ${date}일 ${changeDay(day)} `)
       : setCurrentDate(
@@ -23,7 +23,7 @@ export default function CurrentDate({ country }) {
         );
   };
   useEffect(() => {
-    divideCountry();
+    sectionCountry();
   }, []);
 
   return (
