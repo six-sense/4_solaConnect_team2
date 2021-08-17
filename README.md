@@ -1,3 +1,12 @@
+<p align='middle'>
+  <a href='https://jaranda.netlify.app/'>
+    <img src='https://www.solarconnect.kr/assets/img/common/sc-logo.svg' width="300px;" alt="LiveMD" />
+  </a>
+</p>
+<h2 align='middle'><a href=''>배포할 주소</a></h2>
+
+
+
 ## 📌 프젝젝트 소개
 <p>
 <img src="https://img.shields.io/github/languages/top/six-sense/4_solaConnect_team2?color=yellow&logo=Javascript"> </img>
